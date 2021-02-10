@@ -37,6 +37,31 @@ li {
 }
 
 
-/* img {
+img {
     max-width:100%;
-} */
+}
+
+
+
+
+/*page*/
+.page {
+    display:grid;
+    grid-template-columns:0.5fr 1fr 1fr;
+    grid-column-gap: 1.75rem;
+    width:90%;
+    max-width:80rem;
+    margin:0 auto;
+    /* background:red; */
+}
+
+
+
+.page__navbar__icon-container {
+
+}
+
+
+.navbar__icon-container-heading {
+    
+}

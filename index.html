@@ -10,18 +10,197 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--
+        ALL ICONS
+        ------
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-hashtag" aria-hidden="true"></i>
+        <i class="fa fa-cog" aria-hidden="true"></i>
+
+        
+        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <i class="fa fa-link" aria-hidden="true"></i>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+         
+        <i class="fa fa-comment-o" aria-hidden="true"></i>
+        <i class="fa fa-retweet" aria-hidden="true"></i>
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <i class="fa fa-share" aria-hidden="true"></i>
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        
+        <i class="fa fa-search" aria-hidden="true"></i>
+        -->
 
         <div class="page">
             <nav class="page__navbar">
                 <!--twitter logo, explore, settings-->
+                <i class="fa fa-twitter page__navbar__icon" aria-hidden="true"></i>
+                
+                <div class="page__navbar__icon-container">
+                    <i class="fa fa-hashtag page__navbar__icon" aria-hidden="true"></i>
+                    <h2 class="navbar__icon-container-heading">EXPLORE</h2>
+                </div>
+
+                <div class="page__navbar__icon-container">
+                    <i class="fa fa-cog page__navbar__icon" aria-hidden="true"></i>
+                    <h2 class="navbar__icon-container-heading">SETTINGS</h2>
+                </div>
+
             </nav>
             <section class="page__main">
                 <!--profile, tweets-->
+                <div>
+                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                    <div>
+                        <h2>Test user</h2>
+                        <div>1,192 Tweets</div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="background-img" src="https://pbs.twimg.com/profile_banners/4634333330/1600709057/600x200" alt="background image"/>
+                    <div>
+                        <img class="profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div>
+                        <h2>Test user</h2>
+                        <h3>@testUser</h3>
+                    </div>
+                    <p class="profile__description">
+                    Co-founder of http://refold.la. 
+                    I help people learn languages well. 
+                    Support my work: http://patreon.com/refold
+                    </p>
+                    <div class="profile__additonal-info">
+                        <div><i class="fa fa-map-marker" aria-hidden="true"></i><span>Portland</span></div>
+                        <div><i class="fa fa-link" aria-hidden="true"></i><span>youtube.com/mattvsjapan</span></div>
+                        <div><i class="fa fa-calendar" aria-hidden="true"></i><span>Joined December 2015</span></div>
+                    </div>
+
+                    <div class="profile__follow-container">
+                        <a href="#"><span>254</span> Following</a>
+                        <a href="#"><span>5341</span> Following</a>
+                    </div>
+                </div>
+
+                <ul class="tweet-types">
+                    <li>Tweets</li>
+                    <li>Tweets & replies</li>
+                    <li>Media</li>
+                    <li>Likes</li>
+                </ul>
+
+                <article class="tweet">
+                    <img class="tweet__profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
+                    <span>
+                        <h4>test user</h4>
+                        <h5>@testUser</h5>
+                        <h6>Feb 7</h6>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
+                    </span>
+                    <p>
+                    Ever since I learned about René Girard's mimetic theory I've been noticing examples of it everywhere. 
+                    So much of human behavior is just people copying other people. 
+                    Even down to little things like Japanese YouTubers all using the same sound effects in their videos lol
+                    </p>
+
+                    <span class="tweet__actions">
+                        <span><i class="fa fa-comment-o" aria-hidden="true"></i><span>7</span></span>
+                        <span><i class="fa fa-retweet" aria-hidden="true"></i><span>4</span></span>
+                        <span><i class="fa fa-heart-o" aria-hidden="true"></i><span>123</span></span>
+                        <span><i class="fa fa-share" aria-hidden="true"></i></span>
+                    </span>
+                </article>
             </section>
             <aside class="page__sidebar">
                 <!-- new to twitter, photos,
                 you might like, whats happening,
                 footer nav links-->
+                <div class="search-twitter-container">
+                    <label for="search-twitter"></label>
+                    <input type="text" name="search" id="search-twitter" placeholder="Search Twitter">
+                </div>
+
+                <div class="sign-up-box">
+                    <h2>New to Twitter?</h2>
+                    <h3>Sign up now to get your own personalized timeline!</h3>
+                    <button>Sign up</button>
+                </div>
+
+                <section class="user-photos-section">
+                    <img src="https://pbs.twimg.com/media/EtvX0XuVEAEeGBK?format=png&name=240x240" alt=""/>
+                    <img src="https://pbs.twimg.com/media/EtandyTUYAAeaIz?format=png&name=240x240" alt=""/>
+                    <img src="https://pbs.twimg.com/media/EtVFAYzUcAAfa8U?format=jpg&name=240x240" alt=""/>
+                    <img src="https://pbs.twimg.com/media/EtQYsJdVgAEQkrB?format=jpg&name=240x240" alt=""/>
+                    <img src="https://pbs.twimg.com/media/EtQZTYlU0AIei9v?format=jpg&name=240x240" alt=""/>
+                    <img src="https://pbs.twimg.com/media/Es27T3AVcAEwxto?format=jpg&name=240x240" alt=""/>
+                </section>
+
+                <section class="suggested-profile">
+                    <h2>You might like</h2>
+                    <div class="suggested-profile__profile">
+                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <div>
+                            <h3>The madA...</h3>
+                            <h4>@theMadd86...</h4>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="suggested-profile__profile">
+                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <div>
+                            <h3>The madA...</h3>
+                            <h4>@theMadd86...</h4>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="suggested-profile__profile">
+                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <div>
+                            <h3>The madA...</h3>
+                            <h4>@theMadd86...</h4>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <button>show more</button>
+                </section>
+
+                <section class="whats-happening-section">
+                    <h2>What's happening</h2>
+                    <div class="whats-happening__topics">
+                        <!--5 different topic(s)-->
+                        <div class="whats-happening__topic">
+                            <div><span>Hip hop</span><span>Trending</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                            <h3>#hipHopThings</h3>
+                            <div>3,093 Tweets</div>
+                        </div>
+
+                        <div class="whats-happening__topic">
+                            <div><span>Politics</span><span>Trending</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                            <h3>#goodPillow</h3>
+                            <div>5,160 Tweets</div>
+                        </div>
+                    </div>
+                </section>
+
+                <nav>
+                    <ul class="tos-footer">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Ads info</a></li>
+                        <li><a href="#">More<i class="fa fa-ellipsis-h" aria-hidden="true"></i></div></a></li>
+                    </ul>
+
+                    <ul>
+                        <li>&copy; 20201 Twitter Inc...</li>
+                    </ul>
+                </nav>
             </aside>
         </div>
         

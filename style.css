@@ -152,38 +152,47 @@ button {
     position: relative;
 }
 
-.profile__background-img {
-    width:calc(100%);
+.thing {
+    position: relative;
+    width:100%;
     height:200px;
+    background: #e74c3c;
+}
+
+
+.profile__background-img {
+    width:100%;
+    height:100%;
     object-fit: cover;
     object-position: center;
 }
 
-.profile-user-container {
-    /* background:rgba(255, 0, 0, 0.11); */
-
-    display:flex;
-    justify-content: flex-end;
-    align-items:start;
-    padding:0 var(--page-main-padding-lr);
-}
 
 .profile__user-hero {
     position: absolute;
     width:125px;
     height:125px;
     border:4px solid #fff;
-    top:8.5rem;
     left:0.5rem;
+    top:175%;
+    transform:translateY(-175%);
+}
+
+.follow-btn-container {
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    padding:0.25rem 0.5rem;
 }
 
 .follow-btn {
+    position: relative;
     border:1px solid var(--blue);
     color:#62b7ec;
     color:var(--blue);
     font-weight: 700;
     border-radius: 25px;
-    padding:0.5rem 0.5rem;
+    padding:0.5rem 0.75rem;
     margin-top:0.25rem;
 }
 
@@ -194,8 +203,13 @@ button {
     margin-top:1.5rem;
 }
 
-/*currently on the user profile*/
+.profile__info__name__title {
 
+}
 
+.profile__info__name__id {
+    color:var(--gray);
+    font-weight: 400;
+}
 
 

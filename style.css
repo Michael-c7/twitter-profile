@@ -41,27 +41,136 @@ img {
     max-width:100%;
 }
 
+button {
+    border:none;
+    background:none;
+}
+
+
+
+
+
+
+/*UNIVERSAL CLASSES THAT CAN BE OVERWRITTEN*/
+.profile-user {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+
 
 
 
 /*page*/
 .page {
     display:grid;
-    grid-template-columns:0.5fr 1fr 1fr;
+    grid-template-columns:0.5fr 1.5fr 1fr;
     grid-column-gap: 1.75rem;
     width:90%;
     max-width:80rem;
     margin:0 auto;
-    /* background:red; */
 }
 
 
 
+
+
+/*page navbar*/
 .page__navbar__icon-container {
-
+    display:flex;
+    align-items:center;
+    margin:1rem 0;
 }
 
+.page__navbar__icon {
+    font-size:1.5rem;
+    width:25px;
+}
+
+.fa-twitter {
+    color:#1DA1F2;
+    color:var(--blue);
+    font-size:1.75rem;
+    /* margin-top:0.5rem; */
+}
 
 .navbar__icon-container-heading {
+    font-size:1rem;
+    margin-left:1rem;
+}
+
+
+
+
+
+/*page main*/
+.page__main {
+    /*instead of border use ::before * ::after*/
+    border:1px solid var(--white-dark);
+    border-bottom: 0px;
+    border-top:0px;
+    height:100%;
+}
+
+/*back button on top of profile*/
+.user-back-container {
+    display:flex;
+    margin:0.5rem 0rem 0.5rem 1rem;
+}
+
+.back-btn {
+    margin-right:2rem;
+}
+
+.back-btn__link {
+    color:#1DA1F2;
+    color:var(--blue);
+}
+
+.back-btn__link__icon {
+    font-size:1.25rem;
+}
+
+.user-back__heading {
+    font-size:1.25rem;
+}
+
+.user-back__tweet-number {
+    color:var(--gray);
+    font-size:0.85rem;
+}
+
+
+
+/*profile*/
+.profile {
+    position: relative;
+}
+
+.profile__background-img {
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-user-container {
+    background:red;
+}
+
+.profile__user-hero {
+    position: relative;
+    width:125px;
+    height:125px;
+    border:2px solid #fff;
+
+    top:-65px;
     
 }
+
+/*currently on the user profile*/
+
+
+
+

@@ -39,29 +39,33 @@
                 
                 <div class="page__navbar__icon-container">
                     <i class="fa fa-hashtag page__navbar__icon" aria-hidden="true"></i>
-                    <h2 class="navbar__icon-container-heading">EXPLORE</h2>
+                    <h2 class="navbar__icon-container-heading">Explore</h2>
                 </div>
 
                 <div class="page__navbar__icon-container">
                     <i class="fa fa-cog page__navbar__icon" aria-hidden="true"></i>
-                    <h2 class="navbar__icon-container-heading">SETTINGS</h2>
+                    <h2 class="navbar__icon-container-heading">Settings</h2>
                 </div>
 
             </nav>
             <section class="page__main">
                 <!--profile, tweets-->
-                <div>
-                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                <div class="user-back-container">
+                    <button class="back-btn">
+                        <a class="back-btn__link" href="#">
+                            <i class="fa fa-arrow-left back-btn__link__icon" aria-hidden="true"></i>
+                        </a>
+                    </button>
                     <div>
-                        <h2>Test user</h2>
-                        <div>1,192 Tweets</div>
+                        <h2 class="user-back__heading">Test user</h2>
+                        <div class="user-back__tweet-number">1,192 Tweets</div>
                     </div>
                 </div>
 
-                <div>
-                    <img class="background-img" src="https://pbs.twimg.com/profile_banners/4634333330/1600709057/600x200" alt="background image"/>
-                    <div>
-                        <img class="profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
+                <div class="profile">
+                    <img class="profile__background-img" src="https://pbs.twimg.com/profile_banners/4634333330/1600709057/600x200" alt="background image"/>
+                    <div class="profile-user-container">
+                        <img class="profile-user profile__user-hero" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
                         <button class="follow-btn">Follow</button>
                     </div>
                     <div>
@@ -93,7 +97,7 @@
                 </ul>
 
                 <article class="tweet">
-                    <img class="tweet__profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
+                    <img class="profile-user tweet__profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
                     <span>
                         <h4>test user</h4>
                         <h5>@testUser</h5>
@@ -142,7 +146,7 @@
                 <section class="suggested-profile">
                     <h2>You might like</h2>
                     <div class="suggested-profile__profile">
-                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <img class="profile-user" src="https://twitter.com/TheMadd86crew" alt="profile image"/>
                         <div>
                             <h3>The madA...</h3>
                             <h4>@theMadd86...</h4>
@@ -151,7 +155,7 @@
                     </div>
 
                     <div class="suggested-profile__profile">
-                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <img class="profile-user" src="https://twitter.com/TheMadd86crew" alt="profile image"/>
                         <div>
                             <h3>The madA...</h3>
                             <h4>@theMadd86...</h4>
@@ -160,7 +164,7 @@
                     </div>
 
                     <div class="suggested-profile__profile">
-                        <img src="https://twitter.com/TheMadd86crew" alt="profile image"/>
+                        <img class="profile-user" src="https://twitter.com/TheMadd86crew" alt="profile image"/>
                         <div>
                             <h3>The madA...</h3>
                             <h4>@theMadd86...</h4>
@@ -191,13 +195,16 @@
                 <nav>
                     <ul class="tos-footer">
                         <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Cookies Policy</a></li>
                         <li><a href="#">Ads info</a></li>
-                        <li><a href="#">More<i class="fa fa-ellipsis-h" aria-hidden="true"></i></div></a></li>
-                    </ul>
-
-                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>More</span>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </a>
+                        </li>
                         <li>&copy; 20201 Twitter Inc...</li>
                     </ul>
                 </nav>

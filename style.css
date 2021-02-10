@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
 :root {
@@ -12,6 +12,10 @@
     --blue-light:#62b7ec;
     --green:#2ecc71;
     --red:#e74c3c;
+
+
+    /*layout*/
+    --page-main-padding-lr:1rem;
     
 }
 
@@ -49,17 +53,17 @@ button {
 
 
 
-
-
+/*-----------------------------------------*/
+/*-----------------------------------------*/
 /*UNIVERSAL CLASSES THAT CAN BE OVERWRITTEN*/
 .profile-user {
     width:50px;
     height:50px;
     border-radius: 50%;
 }
-
-
-
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
 
 
 /*page*/
@@ -106,11 +110,11 @@ button {
 
 /*page main*/
 .page__main {
-    /*instead of border use ::before * ::after*/
     border:1px solid var(--white-dark);
     border-bottom: 0px;
     border-top:0px;
     height:100%;
+    /* background-color:rgba(128, 128, 128, 0.437); */
 }
 
 /*back button on top of profile*/
@@ -149,24 +153,45 @@ button {
 }
 
 .profile__background-img {
-    width:100%;
+    width:calc(100%);
     height:200px;
     object-fit: cover;
     object-position: center;
 }
 
 .profile-user-container {
-    background:red;
+    /* background:rgba(255, 0, 0, 0.11); */
+
+    display:flex;
+    justify-content: flex-end;
+    align-items:start;
+    padding:0 var(--page-main-padding-lr);
 }
 
 .profile__user-hero {
-    position: relative;
+    position: absolute;
     width:125px;
     height:125px;
-    border:2px solid #fff;
+    border:4px solid #fff;
+    top:8.5rem;
+    left:0.5rem;
+}
 
-    top:-65px;
-    
+.follow-btn {
+    border:1px solid var(--blue);
+    color:#62b7ec;
+    color:var(--blue);
+    font-weight: 700;
+    border-radius: 25px;
+    padding:0.5rem 0.5rem;
+    margin-top:0.25rem;
+}
+
+
+.profile__info {
+    /* background:#8A99A7; */
+    padding:0 var(--page-main-padding-lr);
+    margin-top:1.5rem;
 }
 
 /*currently on the user profile*/

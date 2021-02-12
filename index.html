@@ -64,8 +64,8 @@
 
                 <div class="profile">
                     <div class="thing">
-                        <img class="profile__background-img" src="https://pbs.twimg.com/profile_banners/4634333330/1600709057/600x200" alt="background image"/>
-                        <img class="profile-user profile__user-hero" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt="profile image"/>
+                        <img class="profile__background-img" src="./images/background-image/pexels-sevenstorm-juhaszimrus-566305.jpg" alt="background image"/>
+                        <img class="profile-user profile__user-hero" src="./images/profile-images/main-profile.jpg" alt="profile image"/>
                     </div>
                     
                     <div class="follow-btn-container"> 
@@ -78,13 +78,11 @@
                             <h3 class="profile__info__name__id">@testUser</h3>
                         </div>
                         <p class="profile__description">
-                        Co-founder of http://refold.la. 
-                        I help people learn languages well. 
-                        Support my work: http://patreon.com/refold
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sequi et id, quibusdam accusantium aspernatur illum!
                         </p>
                         <div class="profile__additional-info">
                             <div class="profile__additional-info_item"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Portland</span></div>
-                            <div class="profile__additional-info_item"><i class="fa fa-link" aria-hidden="true"></i><a href="#">youtube.com/mattvsjapan</a></div>
+                            <div class="profile__additional-info_item"><i class="fa fa-link" aria-hidden="true"></i><a href="#">youtube.com/exampleLink</a></div>
                             <div class="profile__additional-info_item"><i class="fa fa-calendar" aria-hidden="true"></i><span>Joined December 2015</span></div>
                         </div>
     
@@ -103,49 +101,54 @@
                 </ul>
 
                 <article class="tweet">
-                    <img class="profile-user tweet__profile-img" src="https://pbs.twimg.com/profile_images/934928229357387777/r-k49D9L_400x400.jpg" alt=""/>
-                    <span class="tweet__title-info">
-                        <h4 class="tweet__title-info__name">test user</h4>
-                        <h5>@testUser</h5>
-                        <h6>Feb 7</h6>
-                        <i class="fa fa-ellipsis-h tweet__title-info__ellipsis" aria-hidden="true"></i>
-                    </span>
-                    <p>
-                    Ever since I learned about René Girard's mimetic theory I've been noticing examples of it everywhere. 
-                    So much of human behavior is just people copying other people. 
-                    Even down to little things like Japanese YouTubers all using the same sound effects in their videos lol
-                    </p>
-
-                    <span class="tweet__actions">
-                        <span><i class="fa fa-comment-o" aria-hidden="true"></i><span>7</span></span>
-                        <span><i class="fa fa-retweet" aria-hidden="true"></i><span>4</span></span>
-                        <span><i class="fa fa-heart-o" aria-hidden="true"></i><span>123</span></span>
-                        <span><i class="fa fa-share" aria-hidden="true"></i></span>
-                    </span>
+                    <img class="profile-user tweet__profile-img" src="./images/profile-images/main-profile.jpg" alt=""/>
+                    <div class="tweet__text-container">
+                        <span class="tweet__title-info">
+                            <h4 class="tweet__title-info__name">test user</h4>
+                            <h5>@testUser</h5>
+                            <h6>Feb 7</h6>
+                            <i class="fa fa-ellipsis-h tweet__title-info__ellipsis" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                        Ever since I learned about René Girard's mimetic theory I've been noticing examples of it everywhere. 
+                        So much of human behavior is just people copying other people. 
+                        Even down to little things like Japanese YouTubers all using the same sound effects in their videos lol
+                        </p>
+    
+                        <span class="tweet__actions">
+                            <span class="tweet__actions__item"><i class="fa fa-comment-o tweet__actions__item__icon" aria-hidden="true"></i><span class="tweet__actions__text">7</span></span>
+                            <span class="tweet__actions__item"><i class="fa fa-retweet tweet__actions__item__icon" aria-hidden="true"></i><span class="tweet__actions__text">4</span></span>
+                            <span class="tweet__actions__item"><i class="fa fa-heart-o tweet__actions__item__icon" aria-hidden="true"></i><span class="tweet__actions__text">123</span></span>
+                            <span class="tweet__actions__item"><i class="fa fa-share tweet__actions__item__icon" aria-hidden="true"></i></span>
+                        </span>
+                    </div>
                 </article>
             </section>
+            
+            <!--aside-->
             <aside class="page__sidebar">
                 <!-- new to twitter, photos,
                 you might like, whats happening,
                 footer nav links-->
                 <div class="search-twitter-container">
                     <label for="search-twitter"></label>
-                    <input type="text" name="search" id="search-twitter" placeholder="Search Twitter">
+                    <input class="search-twitter__input" type="text" name="search" id="search-twitter" placeholder="Search Twitter">
+                    <i class="fa fa-search search-twitter__icon" aria-hidden="true"></i>
                 </div>
 
                 <div class="sign-up-box">
-                    <h2>New to Twitter?</h2>
-                    <h3>Sign up now to get your own personalized timeline!</h3>
-                    <button>Sign up</button>
+                    <h2 class="sign-up-box__heading">New to Twitter?</h2>
+                    <h3 class="sign-up-box__text">Sign up now to get your own personalized timeline!</h3>
+                    <button class="sign-up-btn">Sign up</button>
                 </div>
 
                 <section class="user-photos-section">
-                    <img src="https://pbs.twimg.com/media/EtvX0XuVEAEeGBK?format=png&name=240x240" alt=""/>
-                    <img src="https://pbs.twimg.com/media/EtandyTUYAAeaIz?format=png&name=240x240" alt=""/>
-                    <img src="https://pbs.twimg.com/media/EtVFAYzUcAAfa8U?format=jpg&name=240x240" alt=""/>
-                    <img src="https://pbs.twimg.com/media/EtQYsJdVgAEQkrB?format=jpg&name=240x240" alt=""/>
-                    <img src="https://pbs.twimg.com/media/EtQZTYlU0AIei9v?format=jpg&name=240x240" alt=""/>
-                    <img src="https://pbs.twimg.com/media/Es27T3AVcAEwxto?format=jpg&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/EtvX0XuVEAEeGBK?format=png&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/EtandyTUYAAeaIz?format=png&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/EtVFAYzUcAAfa8U?format=jpg&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/EtQYsJdVgAEQkrB?format=jpg&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/EtQZTYlU0AIei9v?format=jpg&name=240x240" alt=""/>
+                    <img class="user-photos-section__img" src="https://pbs.twimg.com/media/Es27T3AVcAEwxto?format=jpg&name=240x240" alt=""/>
                 </section>
 
                 <section class="suggested-profile">

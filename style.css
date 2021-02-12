@@ -3,9 +3,10 @@
 
 :root {
     /*color scheme*/
-    --white:#fff;
-    --white-light:#F7F9FA;
-    --white-dark:#e0e2e2;
+    --white-050:#fff;
+    --white-100:#F7F9FA;
+    --white-125:#F8F8F8;
+    --white-150:#e0e2e2;
     --gray:#8A99A7;
     --gray-dark:#66727c;
     --black:#222;
@@ -72,6 +73,8 @@ a:hover {
     width:50px;
     height:50px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 /*-----------------------------------------*/
 /*-----------------------------------------*/
@@ -83,7 +86,7 @@ a:hover {
     display:grid;
     grid-template-columns:0.5fr 1.5fr 1fr;
     grid-column-gap: 1.75rem;
-    width:90%;
+    width:95%;
     max-width:80rem;
     margin:0 auto;
 }
@@ -122,7 +125,7 @@ a:hover {
 
 /*page main*/
 .page__main {
-    border:1px solid var(--white-dark);
+    border:1px solid var(--white-150);
     border-bottom: 0px;
     border-top:0px;
     height:100%;
@@ -323,10 +326,25 @@ a:hover {
 /*tweet*/
 .tweet {
     /* background: gray; */
+    transition:all 0.25s ease;
     position: relative;
-    padding:0 1rem;
+    padding:0.75rem 1rem;
+
+    display:flex;
 }
 
+.tweet:hover {
+    background-color: var(--white-125);
+    cursor: pointer;
+}
+
+.tweet__profile-img {
+    margin-right:1rem;
+}
+
+.tweet__text-container {
+    /* background:rgba(255, 0, 0, 0.247); */
+}
 
 .tweet__title-info {
     position: relative;
@@ -354,4 +372,149 @@ a:hover {
     position: absolute;
     left:100%;
     transform:translateX(-100%);
+}
+
+
+.tweet__actions {
+    /* background: red; */
+    display:flex;
+    justify-content: space-between;
+    margin-top:0.75rem;
+    width:80%;
+}
+
+.tweet__actions__text {
+    margin-left:0.75rem;
+}
+
+
+/*hover blue*/
+.tweet__actions__item {
+    position: relative;
+    color:var(--gray);
+    /* background: #1DA1F2; */
+    /* padding:0.25rem; */
+}
+
+
+.tweet__actions__item:hover 
+.tweet__actions__item__icon {
+    color:red;
+}
+
+
+
+
+
+/*sidebar*/
+.page__sidebar {
+    /* background:red; */
+    /* padding:0 1rem; */
+}
+
+.search-twitter-container {
+    position: relative;
+    width:100%;
+    height:2.5rem;
+    border-radius: 30px;
+    margin-top:0.5rem;
+    /* vertical-align: top; */
+}
+
+.search-twitter__icon  {
+    position: absolute;
+    left:5%;
+    top:45%;
+    transform: translate(-5%, -45%);
+    color:rgb(91,112,131);
+}
+
+.search-twitter__input {
+    position: relative;
+    border:none;
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+    background-color:#EBEEF0;
+    padding-left:2.5rem;  
+}
+
+.search-twitter__input::placeholder {
+    font-size:0.9rem;
+    font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
+.sign-up-box {
+    /* background:red; */
+    margin-top:5rem;
+    margin-bottom:1rem;
+    padding:1rem;
+    border:1px solid var(--white-150);
+    border-radius: 10px;
+}
+
+.sign-up-box__heading {
+    font-size:1.15rem;
+}
+
+.sign-up-box__text {
+    margin:0.75rem 0;
+
+    font-size:0.8rem;
+    font-weight:400;
+    color:var(--gray);
+}
+
+.sign-up-btn {
+    width:100%;
+    height:2.5rem;
+    color:var(--white-050);
+    background-color:var(--blue);
+    border-radius: 25px;
+    font-size:1rem;
+    font-weight:700;
+}
+
+
+
+.user-photos-section {
+    width:100%;
+    height:12rem;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: stretch;
+    grid-gap:3px;
+    border-radius: 20px;
+
+    
+}
+
+.user-photos-section__img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/*top left corner*/
+.user-photos-section__img:first-of-type {
+    border-top-left-radius: 20px;
+}
+/*top right corner*/
+.user-photos-section__img:nth-child(3) {
+    border-top-right-radius: 20px;
+}
+/*bottom left corner*/
+.user-photos-section__img:nth-child(4) {
+    border-bottom-left-radius: 20px;
+}
+/*bottom right corner*/
+.user-photos-section__img:last-of-type {
+    border-bottom-right-radius: 20px;
+}
+
+
+.suggested-profile {
+    margin:0.5rem 0;
+    background: red;
 }

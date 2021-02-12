@@ -151,7 +151,7 @@
                     <img class="user-photos-section__img" src="https://pbs.twimg.com/media/Es27T3AVcAEwxto?format=jpg&name=240x240" alt=""/>
                 </section>
 
-                <section class="suggested-profile">
+                <section class="item-profile">
                     <h2 class="heading-style-1">You might like</h2>
                    
                     <div class="suggested-profile__profile-container">
@@ -191,12 +191,11 @@
                 </section>
 
 
-                <section class="suggested-profile">
+                <!-- <section class="suggested-profile">
                     <h2 class="heading-style-1">What's happening</h2>
                    
-
-                    <div class="suggested-profile__profile-container whats-happening-section-container">
-                        <div class="suggested-profile__profile whats-happening-section">
+                    <div class="whats-happening-section-container">
+                        <div class="whats-happening-section">
                             <div class="whats-happening__topics">
                                 <section class="whats-happening__topic">
                                     <header class="whats-happening__header">
@@ -212,55 +211,74 @@
                                 </section>
                             </div>
                         </div>
-                   </div>
-                    <!-- <div class="suggested-profile__profile-container">
-                        <div class="suggested-profile__profile">
-                            <div>
-                                <span><h3>Politics</h3> <h4>Trending</h4></span>
-                                <h5>@theMadd86...</h5>
-                            </div>
-                        </div>
-                   </div> -->
+                   </div> 
 
-                   
+                    <button class="suggested-profile__show-more-btn show-more-btn"><a class="show-more-btn__link" href="#">Show more</a></button>
+                </section> -->
 
+                <!--5 different topic(s)-->
+                <section class="whats-happening-section">
+                    <h2 class="heading-style-1">What's happening</h2>
+                    <div class="whats-happening__topics">
+
+                        <section class="whats-happening__topic-container">
+                            <heading class="whats-happening__topic__heading">
+                                <div class="whats-happening__topic__topic">
+                                    <span class="topic__trending-topic">Sports</span>
+                                    <span>Trending</span>
+                                </div>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </heading>
+
+                            <h3 class="topic__tweet-hashtag">#HereWeGo</h3>
+                            <div class="topic__tweet-amount">5,160 Tweets</div>
+                        </section>
+
+                        <section class="whats-happening__topic-container">
+                            <heading class="whats-happening__topic__heading">
+                                <div class="whats-happening__topic__topic">
+                                    <span class="topic__trending-topic">K-pop</span>
+                                    <span>Trending</span>
+                                </div>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </heading>
+
+                            <h3 class="topic__tweet-hashtag">#4YearsWithSpringDau</h3>
+                            <div class="topic__tweet-amount">15,241 Tweets</div>
+                        </section>
+
+                        <section class="whats-happening__topic-container">
+                            <heading class="whats-happening__topic__heading">
+                                <div class="whats-happening__topic__topic">
+                                    <span class="topic__trending-topic">News</span>
+                                    <span>Trending</span>
+                                </div>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </heading>
+
+                            <h3 class="topic__tweet-hashtag">#YearOfTheOx</h3>
+                            <div class="topic__tweet-amount">42,123 Tweets</div>
+                        </section>
+
+                    </div>
                     <button class="suggested-profile__show-more-btn show-more-btn"><a class="show-more-btn__link" href="#">Show more</a></button>
                 </section>
 
-                <!--5 different topic(s)-->
-                <!-- <section class="whats-happening-section">
-                    <h2>What's happening</h2>
-                    <div class="whats-happening__topics">
-                        <div class="whats-happening__topic">
-                            <div><span>Hip hop</span><span>Trending</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                            <h3>#hipHopThings</h3>
-                            <div>3,093 Tweets</div>
-                        </div>
-
-                        <div class="whats-happening__topic">
-                            <div><span>Politics</span><span>Trending</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                            <h3>#goodPillow</h3>
-                            <div>5,160 Tweets</div>
-                        </div>
-                    </div>
-                </section> -->
-
-                <nav>
-                    <ul class="tos-footer">
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Ads info</a></li>
-                        <li>
-                            <a href="#">
-                                <span>More</span>
-                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <footer class="tos-footer">
+                    <ul class="tos-footer__items">
+                        <li class="tos-footer__item"><a class="tos-footer__item__link" href="#">Terms of Service</a></li>
+                        <li class="tos-footer__item"><a class="tos-footer__item__link" href="#">Privacy Policy</a></li>
+                        <li class="tos-footer__item"><a class="tos-footer__item__link" href="#">Cookies Policy</a></li>
+                        <li class="tos-footer__item"><a class="tos-footer__item__link" href="#">Ads info</a></li>
+                        <li class="tos-footer__item">
+                            <a href="#" class="tos-footer__item__link item__link__more-link">
+                                <span class="more-link__text">More</span>
+                                <i class="fa fa-ellipsis-h more-link__icon" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li>&copy; 20201 Twitter Inc...</li>
+                        <li class="tos-footer__item">&copy; 2021 Twitter, Inc.</li>
                     </ul>
-                </nav>
+                </footer>
             </aside>
         </div>
         

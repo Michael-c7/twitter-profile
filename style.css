@@ -23,7 +23,7 @@
 }
 
 
-/*default styles*/
+/*resets & default styles*/
 *,
 *::before,
 *::after {
@@ -76,9 +76,30 @@ a:hover {
     object-fit: cover;
     object-position: center;
 }
+
+
+/*hover states*/
+.blue-hover:hover {
+    background-color:var(--blue-light);
+    color:var(--blue);
+    cursor: pointer;
+    border-radius: 50px;
+    /* transition: all 0.25s ease; */
+}
+
+.gray-hover:hover {
+    background-color:rgba(92, 92, 92, 0.137);
+    cursor: pointer;
+}
+
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 /*-----------------------------------------*/
+
+
+
+
+
 
 
 /*page*/
@@ -93,29 +114,33 @@ a:hover {
 
 
 
-
-
 /*page navbar*/
 .page__navbar__icon-container {
     display:flex;
     align-items:center;
-    margin:1rem 0;
+    margin:0.5rem 0;
 }
 
 .page__navbar__icon {
     font-size:1.5rem;
-    width:25px;
+    width:auto;
+    height:auto;
+    padding:0.5rem;
+    border-radius: 50%;
+}
+.page__navbar__icon-container:hover,
+.fa-twitter:hover {
+    border-radius: 50px;
 }
 
 .fa-twitter {
     color:#1DA1F2;
     color:var(--blue);
-    font-size:1.75rem;
-    /* margin-top:0.5rem; */
+    font-size:2rem;
 }
 
 .navbar__icon-container-heading {
-    font-size:1rem;
+    font-size:1.2rem;
     margin-left:1rem;
 }
 
@@ -139,6 +164,8 @@ a:hover {
 }
 
 .back-btn {
+    width:40px;
+    height:auto;
     margin-right:2rem;
 }
 
@@ -148,7 +175,7 @@ a:hover {
 }
 
 .back-btn__link__icon {
-    font-size:1.25rem;
+    font-size:1.125rem;
 }
 
 .user-back__heading {
@@ -299,14 +326,9 @@ a:hover {
 }
 
 .tweet-types__item:hover {
-    background-color:#62b7ec40;
-    background-color:var(--blue-light);
-    cursor: pointer;
-}
-
-.tweet-types__item:hover .tweet-types__item__link {
-    color:#1DA1F2;
-    color:var(--blue); 
+    /*resets the blue-hover
+    default border radius*/
+    border-radius: 0;
 }
 
 .tweet-types__item__link {

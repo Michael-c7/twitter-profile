@@ -446,9 +446,7 @@ a:hover {
 
 
 .sign-up-box {
-    /* background:red; */
-    margin-top:5rem;
-    margin-bottom:1rem;
+    margin:1rem 0;
     padding:1rem;
     border:1px solid var(--white-150);
     border-radius: 10px;
@@ -460,7 +458,6 @@ a:hover {
 
 .sign-up-box__text {
     margin:0.75rem 0;
-
     font-size:0.8rem;
     font-weight:400;
     color:var(--gray);
@@ -476,8 +473,6 @@ a:hover {
     font-weight:700;
 }
 
-
-
 .user-photos-section {
     width:100%;
     height:12rem;
@@ -487,8 +482,6 @@ a:hover {
     align-items: stretch;
     grid-gap:3px;
     border-radius: 20px;
-
-    
 }
 
 .user-photos-section__img {
@@ -515,6 +508,134 @@ a:hover {
 
 
 .suggested-profile {
-    margin:0.5rem 0;
-    background: red;
+    margin:0.75rem 0;
+    background: var(--white-100);
+    /* background: var(--gray); */
+    border-radius: 20px;
+    padding:1rem;
 }
+
+.heading-style-1 {
+    font-size:1.25rem;
+    color:var(--black);
+
+    margin-bottom:0.75rem;
+}
+
+.suggested-profile__profile-container {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    /* margin:0.5rem 0; */
+    padding:1rem 0;
+
+    border-bottom: 1px solid var(--white-150);
+}
+
+
+.suggested-profile__profile-container::after {
+    content:"";
+    position: absolute;
+    width:calc(100% + 2rem);
+    height:1px;
+    background-color:var(--white-150);
+    bottom:0;
+    left:-1rem;
+}
+
+.suggested-profile__profile-container:first-of-type::before {
+    content:"";
+    position: absolute;
+    width:calc(100% + 2rem);
+    height:1px;
+    background-color:var(--white-150);
+    top:0;
+    left:-1rem;
+}
+
+.suggested-profile__profile {
+    display:flex;
+    /* justify-content: start; */
+    align-items: center;
+}
+
+.suggested-profile__show-more-btn {
+    margin-top:0.75rem;
+}
+
+.show-more-btn {
+    font-size:1rem;
+}
+
+.show-more-btn__link:hover {
+    text-decoration: none;
+}
+
+
+
+
+/*whats happening*/
+.whats-happening-section-container {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:1rem 0;
+
+    border-bottom: 1px solid var(--white-150);
+}
+
+.whats-happening-section {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    /* margin:0.5rem 0; */
+    padding:1rem 0;
+
+    border-bottom: 1px solid var(--white-150);
+}
+
+/* .suggested-profile__profile-container::after {
+    content:"";
+    position: absolute;
+    width:calc(100% + 2rem);
+    height:1px;
+    background-color:var(--white-150);
+    bottom:0;
+    left:-1rem;
+}
+
+.suggested-profile__profile-container:first-of-type::before {
+    content:"";
+    position: absolute;
+    width:calc(100% + 2rem);
+    height:1px;
+    background-color:var(--white-150);
+    top:0;
+    left:-1rem;
+} */
+
+
+.whats-happening__topic {
+    width:inherit;
+    /* background:rgba(0, 255, 191, 0.301); */
+}
+
+.whats-happening__header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    /* background:red; */
+    width:inherit;
+}
+
+.whats-happening__headings {
+    display: flex;
+    align-items:center;
+}
+

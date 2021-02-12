@@ -326,11 +326,29 @@ a:hover {
 /*tweet*/
 .tweet {
     /* background: gray; */
-    transition:all 0.25s ease;
+    display:flex;
     position: relative;
     padding:0.75rem 1rem;
+    transition:all 0.25s ease;
+}
 
-    display:flex;
+.tweet:first-of-type::before,
+.tweet::after  {
+    content:"";
+    position: absolute;
+    background:var(--white-150);
+    height:1px;
+    width:100%;
+}
+
+.tweet:first-of-type::before {
+    top:0;
+    left:0;
+}
+
+.tweet::after {
+    bottom:0;
+    left:0;
 }
 
 .tweet:hover {

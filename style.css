@@ -12,7 +12,7 @@
     --black:#222;
 
     --blue:#1DA1F2;
-    --blue-light:#62b7ec40;
+    --blue-light:#62b7ec27;
     --green:#2ecc71;
     --red:#e74c3c;
 
@@ -726,6 +726,25 @@ a:hover {
 
 /*TODO
 1. mobile view(s)
+
 2. hover states
+- sign-up btn
+- you might like section
+- suggest profiles section
+- TOS links, more icon not supposed
+to have a hover effect on it(only text)
+- tweet reply, retweet, hear, share, more btns
+
+2.5 active states
+- search input
+- follow btns
+- tweet reply, retweet, hear,share, more btns
+
 3. various issues
+
+-----
+some examples of twitter profiles
+
+https://twitter.com/adab_en
+https://twitter.com/mattvsjapan
 */

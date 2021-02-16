@@ -322,8 +322,9 @@ a:hover {
 } */
 
 .tweet-types {
-    display:inline-flex;
-    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     
 }
 
@@ -332,10 +333,8 @@ a:hover {
     color:var(--gray-dark);
     font-weight: 600;
     letter-spacing: 0.25px;
-
-    padding:1rem 0.25rem;
-    /*divided by 4 because of 4 tweet-types__item*/
-    width:calc(100% / 4);
+    padding:1rem 0.5rem;
+    flex-grow:1;
 
     display:flex;
     justify-content: center;
@@ -425,6 +424,26 @@ a:hover {
     color:var(--black);
 }
 
+.tweet__title-info__id {
+    position: relative;
+    margin-right:1rem;
+}
+
+/*the little dot between 
+.tweet__title-info__id and
+tweet__title-info__date*/
+.tweet__title-info__id::after {
+    content:"";
+    position: absolute;
+    background-color: var(--gray);
+    top:65%;
+    left:113%;
+    transform: translate(-65%, -113%);
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+}
+
 .tweet__title-info__ellipsis {
     position: absolute;
     left:100%;
@@ -433,7 +452,6 @@ a:hover {
 
 
 .tweet__actions {
-    /* background: red; */
     display:flex;
     justify-content: space-between;
     margin-top:0.75rem;
@@ -845,13 +863,10 @@ have only icons
     }
 
 
-    .tweet-types {
+    /* .tweet-types {
         display:inline-flex;
         width:auto;
-
         display:flex;
-        /* justify-content: space-around; */  
-           
     }
     
     .tweet-types__item {
@@ -861,19 +876,15 @@ have only icons
         letter-spacing: 0.25px;
     
         padding:0.5rem 0.25rem;
-        /* width:calc(100% / 4); */
 
         flex-basis:auto;
         flex-grow:1;
-        /* flex-shrink:2; */
 
         display:flex;
         justify-content: center;
         align-items:center;
-
-        /*width that the tweets and replies text wraps*/
         min-width:132px;   
-    }
+    } */
 
 
     
@@ -884,19 +895,14 @@ have only icons
 
 
 /*TODO
-1. hover states
-- you might like section & 
-suggest profiles section
-- TOS links, more icon not supposed
+1. width of tweets and replies
+
+2. you might like & suggested profiles hover states
+
+3. TOS links, more icon not supposed
 to have a hover effect on it(only text)
-- tweet reply, retweet, hear, share, more btns
 
-2.5 active states
-- tweet reply, retweet, hear,share, more btns
-
-3. various issues
-- width of tweets and replies
-
+4. tweet : reply, retweet, hear, share, more btn hover state
 -----
 some examples of twitter profiles
 

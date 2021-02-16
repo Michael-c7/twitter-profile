@@ -686,7 +686,6 @@ tweet__title-info__date*/
 .whats-happening__topic-container {
     position: relative;
     padding:1rem 0;
-    /* background:red; */
 }
 
 .whats-happening__topic-container::after {
@@ -710,6 +709,7 @@ tweet__title-info__date*/
 }
 
 .whats-happening-section {
+    position: relative;
     margin:0.75rem 0;
     background: var(--white-100);
     border-radius: 20px;
@@ -727,8 +727,29 @@ tweet__title-info__date*/
     font-size:0.85rem;
 }
 
+.whats-happening__topic__topic {
+    position: relative;
+}
+
 .topic__trending-topic {
+    position: relative;
     margin-right:0.5rem;
+    /* background:red; */
+}
+
+/*the little dot between 
+.tweet__title-info__id and
+tweet__title-info__date*/
+.topic__trending-topic::after {
+    content:"";
+    position: absolute;
+    background-color: var(--gray);
+    top:65%;
+    left:120%;
+    transform: translate(-65%, -117%);
+    width:2px;
+    height:2px;
+    border-radius: 50%;
 }
 
 .topic__tweet-hashtag {

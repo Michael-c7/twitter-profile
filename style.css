@@ -591,6 +591,8 @@ tweet__title-info__date*/
     border-bottom-right-radius: 20px;
 }
 
+
+
 /* used for the suggested profiles
  & the the news sections(so far)*/
 .item-profile {
@@ -599,10 +601,6 @@ tweet__title-info__date*/
     border-radius: 20px;
     padding:var(--page-main-padding-lr);
 }
-
-/* .item-profile {
-
-} */
 
 .heading-style-1 {
     font-size:1.25rem;
@@ -616,14 +614,13 @@ tweet__title-info__date*/
     justify-content: space-between;
     align-items:center;
     padding:var(--page-main-padding-lr) 0;
-    border-bottom: 1px solid var(--white-150);
 }
 
-/* .suggested-profile__profile-container:hover {
-    background:rgba(128, 128, 128, 0.123);
-} */
+.suggested-profile__profile-container:hover {
+    background:rgba(175, 45, 45, 0.85);
+}
 
-
+/*lines between the suggested profile(s)*/
 .suggested-profile__profile-container::after {
     content:"";
     position: absolute;
@@ -646,7 +643,6 @@ tweet__title-info__date*/
 }
 
 
-
 .suggested-profile__profile {
     display:flex;
     /* justify-content: start; */
@@ -658,12 +654,21 @@ tweet__title-info__date*/
     cursor:pointer;
 }
 
+.suggested-profile__profile__info {
+    margin-left:0.75rem;
+    font-size:0.8rem;
+}
+
 .suggested-profile__profile__id {
     color:var(--gray);
 }
 
 .suggested-profile__show-more-btn {
     margin-top:0.75rem;
+}
+
+.follow-btn-style-2 {
+    padding:0.4rem 1rem;
 }
 
 .show-more-btn {
@@ -895,14 +900,12 @@ have only icons
 
 
 /*TODO
-1. width of tweets and replies
+1. you might like & suggested profiles hover states
 
-2. you might like & suggested profiles hover states
-
-3. TOS links, more icon not supposed
+2. TOS links, more icon not supposed
 to have a hover effect on it(only text)
 
-4. tweet : reply, retweet, hear, share, more btn hover state
+3. tweet : reply, retweet, hear, share, more btn hover state
 -----
 some examples of twitter profiles
 

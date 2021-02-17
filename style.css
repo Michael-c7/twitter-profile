@@ -13,7 +13,7 @@
 
     --blue:#1DA1F2;
     --blue-dark:#1993df;
-    --blue-light:#62b7ec40;
+    --blue-light:#62b7ec17;
     --blue-light-dark:#62b7ec50;
     --green:#2ecc71;
     --red:#e74c3c;
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .blue-light-hover:active {
-    background-color:var(--blue-light);
+    background-color:var(--blue-light-dark);
 }
 
 
@@ -171,7 +171,6 @@ a:hover {
     border-bottom: 0px;
     border-top:0px;
     height:100%;
-    /* background-color:rgba(128, 128, 128, 0.437); */
 }
 
 /*back button on top of profile*/
@@ -363,7 +362,6 @@ a:hover {
 
 /*tweet*/
 .tweet {
-    /* background: gray; */
     display:flex;
     position: relative;
     padding:0.75rem 1rem;
@@ -493,7 +491,6 @@ tweet__title-info__date*/
     height:2.5rem;
     border-radius: 30px;
     margin-top:0.5rem;
-    /* vertical-align: top; */
 }
 
 .search-twitter__icon  {
@@ -618,96 +615,21 @@ tweet__title-info__date*/
 
 
 
-/*==========
-OLD SUGGESTED PROFILE CLASSES, SOME STILL IN USE(in other components)
-============*/
-/* .suggested-profile__profile-container:hover {
-    background:rgba(175, 45, 45, 0.85);
-} */
-
-/* .item-profile > * {
-    background:red;
-} */
-
-/*lines between the suggested profile(s)*/
-/* .suggested-profile__profile-container::after {
-    content:"";
-    position: absolute;
-    width:calc(100% + (var(--page-main-padding-lr) * 2));
-    height:1px;
-    background-color:var(--white-150);
-    bottom:0;
-    left:calc(var(--page-main-padding-lr) - (var(--page-main-padding-lr) + var(--page-main-padding-lr)));
-} */
-/*EG: 1rem - (1rem + 1rem) = -1rem*/
-
-/* 
-.suggested-profile__profile-container:first-of-type::before {
-    content:"";
-    position: absolute;
-    width:calc(100% + 2rem);
-    height:1px;
-    background-color:var(--white-150);
-    top:0;
-    left:-1rem;
-}
-
-
-.suggested-profile__profile {
-    display:flex;
-    align-items: center;
-}
-
-.suggested-profile__profile__name:hover {
-    text-decoration: underline;
-    cursor:pointer;
-}
-
-.suggested-profile__profile__info {
-    margin-left:0.75rem;
-    font-size:0.8rem;
-}
-
-.suggested-profile__profile__id {
-    color:var(--gray);
-}
-
-.suggested-profile__show-more-btn {
-    margin-top:0.75rem;
-    background:red;
-}
-
-.follow-btn-style-2 {
-    padding:0.4rem 1rem;
-}
-
-.show-more-btn {
-    font-size:1rem;
-}
-
-.show-more-btn__link:hover {
-    text-decoration: none;
-} */
 
 
 
 
 
+/*SUGGESTED PROFILE STYLES
+using most of the styles from the 
+ou might like section,
+however overwriting with custom
 
-
-
-
-
-/*
-////////////////////////////
-NEW SUGGESTED PROFILE STYLES
-////////////////////////////
 */
-
 .suggested-profiles-container {
     position: relative;
     background-color:var(--white-100);
-    margin-top:1rem;
+    margin:1rem 0;
     border-radius: 10px;
 }
 
@@ -745,7 +667,6 @@ NEW SUGGESTED PROFILE STYLES
 .suggested-profile-container::after {
     content:"";
     position: absolute;
-    /* width:calc(100% + (var(--page-main-padding-lr) * 2)); */
     width:100%;
     height:1px;
     background-color:var(--white-150);
@@ -868,7 +789,6 @@ NEW SUGGESTED PROFILE STYLES
 .topic__trending-topic {
     position: relative;
     margin-right:0.5rem;
-    /* background:red; */
 }
 
 /*the little dot between 
@@ -878,9 +798,9 @@ tweet__title-info__date*/
     content:"";
     position: absolute;
     background-color: var(--gray);
-    top:65%;
+    top:60%;
     left:120%;
-    transform: translate(-65%, -117%);
+    transform: translate(-60%, -117%);
     width:2px;
     height:2px;
     border-radius: 50%;
@@ -907,7 +827,7 @@ tweet__title-info__date*/
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size:0.85rem;
+    font-size:0.8rem;
 }
 
 .tos-footer__item {
@@ -924,6 +844,10 @@ tweet__title-info__date*/
     text-decoration: underline;
     color:var(--gray);
 }
+
+/* :not(.more-link__icon:hover) {
+    text-decoration: none;
+} */
 
 .item__link__more-link {
     position: relative;
@@ -1022,31 +946,6 @@ have only icons
         visibility: hidden;
     }
 
-
-    /* .tweet-types {
-        display:inline-flex;
-        width:auto;
-        display:flex;
-    }
-    
-    .tweet-types__item {
-        color:gray;
-        color:var(--gray-dark);
-        font-weight: 600;
-        letter-spacing: 0.25px;
-    
-        padding:0.5rem 0.25rem;
-
-        flex-basis:auto;
-        flex-grow:1;
-
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        min-width:132px;   
-    } */
-
-
     
 }
 
@@ -1055,12 +954,11 @@ have only icons
 
 
 /*TODO
-1. you might like & suggested profiles hover states
 
-2. TOS links, more icon not supposed
+1. TOS links, more icon not supposed
 to have a hover effect on it(only text)
 
-3. tweet : reply, retweet, hear, share, more btn hover state
+2. tweet : reply, retweet, hear, share, more btn hover state
 -----
 some examples of twitter profiles
 

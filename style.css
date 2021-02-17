@@ -16,7 +16,11 @@
     --blue-light:#62b7ec25;
     --blue-light-dark:#62b7ec50;
     --green:#2ecc71;
+    --green-light:#2ecc7025;
+    --green-light-dark:#2ecc7050;
     --red:#e74c3c;
+    --red-light:#e74d3c25;
+    --red-light-dark:#e74d3c50;
 
 
     /*layout*/
@@ -108,6 +112,65 @@ a:hover {
 .gray-hover:hover {
     background-color:rgba(92, 92, 92, 0.137);
 }
+
+
+/*Icon hover / active states*/
+
+/*gets applied to reply,share & more btns*/
+
+/*blue*/
+.pseudo-class-style-blue-1:hover 
+.tweet__actions__item__icon {
+    background:var(--blue-light);
+    color:var(--blue);
+}
+
+.pseudo-class-style-blue-1:active 
+.tweet__actions__item__icon {
+    background:var(--blue-light-dark);
+}
+
+.pseudo-class-style-blue-1:hover 
+.tweet__actions__text {
+    color:var(--blue);
+}
+
+/*green*/
+.pseudo-class-style-green-1:hover 
+.tweet__actions__item__icon {
+    background:var(--green-light);
+    color:var(--green);
+}
+
+.pseudo-class-style-green-1:active 
+.tweet__actions__item__icon {
+    background:var(--green-light-dark);
+}
+
+.pseudo-class-style-green-1:hover 
+.tweet__actions__text {
+    color:var(--green);
+}
+
+/*red*/
+.pseudo-class-style-red-1:hover 
+.tweet__actions__item__icon {
+    background:var(--red-light);
+    color:var(--red);
+}
+
+.pseudo-class-style-red-1:active 
+.tweet__actions__item__icon {
+    background:var(--red-light-dark);
+}
+
+.pseudo-class-style-red-1:hover 
+.tweet__actions__text {
+    color:var(--red);
+}
+
+
+
 
 /*-----------------------------------------*/
 /*-----------------------------------------*/
@@ -458,7 +521,7 @@ tweet__title-info__date*/
 }
 
 .tweet__actions__text {
-    margin-left:0.75rem;
+    margin-left:0.5rem;
 }
 
 
@@ -466,15 +529,19 @@ tweet__title-info__date*/
 .tweet__actions__item {
     position: relative;
     color:var(--gray);
-    /* background: #1DA1F2; */
-    /* padding:0.25rem; */
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.tweet__actions__item__icon {
+    padding:0.5rem;
+    border-radius: 50%;
 }
 
 
-/* .tweet__actions__item:hover 
-.tweet__actions__item__icon {
-    color:red;
-} */
+
 
 
 
@@ -833,7 +900,7 @@ tweet__title-info__date*/
 
 .tos-footer__item {
     margin:0.25rem 0.5rem;
-    /* background:rgba(255, 0, 0, 0.445); */
+
 }
 
 .tos-footer__item,
@@ -845,10 +912,6 @@ tweet__title-info__date*/
     text-decoration: underline;
     color:var(--gray);
 }
-
-/* :not(.more-link__icon:hover) {
-    text-decoration: none;
-} */
 
 .item__link__more-link {
     position: relative;
@@ -865,9 +928,6 @@ tweet__title-info__date*/
     top:1px;
 }
 
-.more-link__icon:hover {
-    text-decoration: none;
-}
 
 
 
@@ -958,8 +1018,6 @@ have only icons
 
 1. TOS links, more icon not supposed
 to have a hover effect on it(only text)
-
-2. tweet : reply, retweet, hear, share, more btn hover state
 -----
 some examples of twitter profiles
 

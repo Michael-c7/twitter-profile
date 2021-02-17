@@ -785,28 +785,35 @@ NEW SUGGESTED PROFILE STYLES
 
 
 
-/*lines between the suggested profile(s)*/
- /* .suggested-profile-container::after {
-    content:"";
-    position: absolute;
-    width:calc(100% + (var(--page-main-padding-lr) * 2));
-    height:1px;
-    background-color:var(--white-150);
-    bottom:0;
-    left:calc(var(--page-main-padding-lr) - (var(--page-main-padding-lr) + var(--page-main-padding-lr)));
-}  */
-/*EG: 1rem - (1rem + 1rem) = -1rem*/
 
 
-/* .suggested-profile__profile-container:first-of-type::before {
-    content:"";
-    position: absolute;
-    width:calc(100% + 2rem);
-    height:1px;
-    background-color:var(--white-150);
-    top:0;
-    left:-1rem;
-} */
+
+.topic__tweet-hashtag {
+    color:var(--black);
+}
+
+.whats-happening-item,
+.whats-happening-info {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.whats-happening__more-btn {
+    align-self: flex-start;
+}
+
+.whats-happening__topic__topic {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.whats-happening__more-btn {
+    position: relative;
+    top:1px;
+}
 
 
 /*whats happening*/
